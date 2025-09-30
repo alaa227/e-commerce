@@ -1,18 +1,34 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Button from './components/Button';
-
+import Button from './components/Button/Button';
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home/Home";
+import Products from "./pages/Products/Products";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-  
-      <div className="p-5">
-      <Button isPrimary>زرار أساسي</Button>
-      <Button>زرار عادي</Button>
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="products" element={<Products />} />
+          <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route
+            path="*"
+            element={<div style={{ padding: 20 }}>404 — الصفحة مش موجودة</div>}
+          />
+        </Route>
+      </Routes>
+     
     </>
   );
 }
