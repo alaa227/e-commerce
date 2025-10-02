@@ -1,0 +1,7 @@
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+    font-size: 2rem;
+}

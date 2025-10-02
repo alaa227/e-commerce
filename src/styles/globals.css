@@ -1,0 +1,29 @@
+/* src/styles/globals.css */
+@import './variables.css';
+
+/* Reset / base */
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background: var(--color-muted-2);
+    color: var(--color-foreground);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+}
+
+/* container tweaks to center layout a bit */
+.container {
+    max-width: 1100px;
+}
+
+/* small utility */
+.text-muted {
+    color: var(--color-muted) !important;
+}

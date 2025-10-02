@@ -1,0 +1,95 @@
+@import "../../styles/variables.css";
+
+/* Hero */
+.hero {
+    background: url("../../../public/HERO.jpg") no-repeat center ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #141414;
+  height: 100vh;
+ 
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.ctaBtn {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Features */
+.features {
+    background: var(--color-secondary);
+    padding: 3rem 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.feature {
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+.feature i {
+  font-size: 2.2rem;
+  color: var(--color-accent); /* نفس الذهبي */
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+    /* الذهبي */
+}
+
+/* Sale */
+.sale {
+    background: #f8f8f8;
+    padding: 4rem 1rem;
+}
+
+.saleBtn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* About teaser */
+.about {
+    background: var(--color-secondary);
+    padding: 4rem 1rem;
+}
+
+.learnMoreBtn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 1px solid var(--color-accent);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    color: var(--color-accent);
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables.css";
+
+.footer {
+    background: var(--color-muted-2);
+    /* أبيض */
+    color: var(--color-foreground);
+    /* أسود */
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.copy {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.made {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    /* ذهبي */
+}

@@ -1,0 +1,20 @@
+/* src/styles/variables.css */
+:root {
+    /* palette */
+    --color-bg: #ffffff;
+    /* خلفية عامة */
+    --color-foreground: #111111;
+    /* نص رئيسي */
+    --color-muted: #6b6b6b;
+    /* رمادي متوسط */
+    --color-border: #e6e6e6;
+    /* حدود وdividers */
+    --color-accent: #b8860b;
+    /* ذهبي/مميز */
+    --color-muted-2: #f5f4f2;
+    /* بيج فاتح */
+    --shadow-soft: 0 6px 20px rgba(17, 17, 17, 0.06);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --gap: 12px;
+}
