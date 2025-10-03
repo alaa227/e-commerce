@@ -17,7 +17,7 @@ export default function Register() {
       await register({ name, email, password });
       navigate("/products"); // بعد التسجيل نذهب للـ products
     } catch (err) {
-      setError(err.message || "فشل التسجيل");
+      setError(err.message || " Registration failed");
     }
   }
 

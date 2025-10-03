@@ -38,3 +38,11 @@
     background: #b8902f;
     /* darker gold */
 }
+.link {
+    color: var(--color-foreground) !important;
+    text-decoration: none !important;
+}
+
+.title {
+    color: var(--color-foreground) !important;
+}
