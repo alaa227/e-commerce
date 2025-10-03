@@ -3,14 +3,16 @@ import styles from "./ProductCard.module.css";
 import cn from "classnames";
 import { useCart } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext";
-
+import { toast } from "react-toastify";
 export default function ProductCard({ product }) {
   const { currentUser } = useAuth();
   const { addToCart } = useCart();
 
+  // ...existing code...
+
   function handleAddToCart() {
     if (!currentUser) {
-      alert("لازم تسجل دخول الأول عشان تضيف للكارت");
+      alert("You must log in first to add to cart");
       return;
     }
     if (product.stock <= 0) {
@@ -18,6 +20,7 @@ export default function ProductCard({ product }) {
       return;
     }
     addToCart(product);
+    toast.success("Product added to cart!");
   }
 
   return (

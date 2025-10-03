@@ -11,6 +11,9 @@ import Register from "./pages/Register/Register";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Cart from './pages/Cart/Cart';
+import { toast } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -32,8 +35,9 @@ function App() {
           />
         </Route>
       </Routes>
-     
+     <ToastContainer position="top-center" />
     </>
+    
   );
 }
 

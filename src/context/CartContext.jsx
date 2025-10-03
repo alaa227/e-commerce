@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
   const { currentUser } = useAuth();
 
   const [cart, dispatch] = useReducer(cartReducer, []);
-
+const count = cart.reduce((sum, item) => sum + item.quantity, 0);
   // 🟢 تحميل الكارت من localStorage عند دخول يوزر
   useEffect(() => {
     if (!currentUser) {
@@ -96,7 +96,7 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, decreaseCartQty, removeFromCart }}
+      value={{ cart, addToCart, decreaseCartQty, removeFromCart, count }}
     >
       {children}
     </CartContext.Provider>
