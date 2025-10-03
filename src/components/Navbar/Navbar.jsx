@@ -7,7 +7,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useCart } from "../../context/CartContext";
 
 export default function Navbar() {
-  const { currentUser, mockLoginAsDemo, logout } = useAuth();
+  const { currentUser, logout } = useAuth();
   const { count } = useCart();
 
   return (
@@ -92,21 +92,12 @@ export default function Navbar() {
                     Register
                   </NavLink>
                 </li>
-                {/* quick demo login for testing */}
-                <li className="nav-item">
-                  <button
-                    className={cn("btn btn-link nav-link", styles.demoBtn)}
-                    onClick={mockLoginAsDemo}
-                  >
-                    Demo Login
-                  </button>
-                </li>
               </>
             ) : (
               <>
                 <li className="nav-item me-3">
                   <span className={styles.welcome}>
-                    مرحباً، {currentUser.name}
+                  {currentUser.name}
                   </span>
                 </li>
                 <li className="nav-item">
@@ -122,7 +113,14 @@ export default function Navbar() {
 
             <li className="nav-item position-relative ms-2">
               <NavLink className="nav-link" to="/cart">
-                <span className="me-1">🛒</span>
+                <i
+                  className="bi bi-cart3 me-1"
+                  style={{
+                    color: "var(--color-accent)",
+                    fontSize: "1.3em",
+                    verticalAlign: "middle",
+                  }}
+                ></i>
                 <span className={styles.cartText}>Cart</span>
                 <span
                   className="position-absolute top-0 start-100 translate-middle badge rounded-pill"

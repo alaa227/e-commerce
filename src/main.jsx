@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import { ProductsProvider } from "./context/ProductsContext";
 
 // bootstrap css + js
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,12 +16,15 @@ import { CartProvider } from "./context/CartContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
+  <BrowserRouter>
+    <AuthProvider>
+      <ProductsProvider>
         <CartProvider>
           <App />
         </CartProvider>
-      </AuthProvider>
-    </BrowserRouter>
-  </React.StrictMode>
+      </ProductsProvider>
+    </AuthProvider>
+  </BrowserRouter>
+</React.StrictMode>
+
 );

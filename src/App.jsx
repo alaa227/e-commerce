@@ -10,9 +10,12 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Cart from './pages/Cart/Cart';
+
 function App() {
   return (
     <>
+    
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -22,6 +25,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="cart" element={<Cart />} />
           <Route
             path="*"
             element={<div style={{ padding: 20 }}>404 — الصفحة مش موجودة</div>}

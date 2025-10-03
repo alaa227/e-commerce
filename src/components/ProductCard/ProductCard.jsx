@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
       alert("Out of stock!");
       return;
     }
-    addToCart(product.id, 1);
+    addToCart(product);
   }
 
   return (

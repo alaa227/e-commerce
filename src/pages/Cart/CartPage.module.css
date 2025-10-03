@@ -1,0 +1,90 @@
+.cartPage {
+    background: var(--color-muted-2);
+    min-height: 70vh;
+    padding-bottom: 40px;
+    border-radius: var(--radius-md);
+}
+
+.cartList {
+    margin: 0 auto;
+}
+
+.cartUl {
+    background: transparent;
+    border: none;
+}
+
+.cartItem {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-soft);
+    transition: box-shadow 0.2s;
+}
+
+.cartItem:hover {
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.10);
+}
+
+.cartImg {
+    display: block;
+    margin-right: 16px;
+    background: #fff;
+}
+
+.productName {
+    color: var(--color-foreground);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.productPrice {
+    color: var(--color-accent);
+    font-size: 1rem;
+}
+
+.qtyControls {
+    gap: 8px;
+}
+
+.qtyNum {
+    min-width: 32px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-foreground);
+}
+
+.message {
+    color: var(--color-muted);
+    background: var(--color-muted-2);
+    border-radius: var(--radius-md);
+    padding: 32px 0;
+}
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn,
+ .disable{
+    border-color: transparent !important;
+    background: #f8f9fa !important;
+    /* أو أي لون خلفية يناسبك */
+    color: var(--color-muted) !important;
+    opacity: 1;
+}
+.noBorderBtn {
+    border: none !important;
+   
+    color: var(--color-foreground) !important;
+    box-shadow: none !important;
+    transition: background 0.2s;
+}
+
+.noBorderBtn:disabled {
+    color: var(--color-muted) !important;
+    
+    opacity: 1;
+}
+
+.noBorderBtn:hover:not(:disabled) {
+    background: #ececec !important;
+}
