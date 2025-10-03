@@ -14,11 +14,10 @@ import Cart from './pages/Cart/Cart';
 import { toast } from "react-toastify";
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-
+import OrderDelivery from "./pages/OrderDelivery/OrderDelivery";
 function App() {
   return (
     <>
-    
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -29,15 +28,15 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="order-delivery" element={<OrderDelivery />} />
           <Route
             path="*"
             element={<div style={{ padding: 20 }}>404 — الصفحة مش موجودة</div>}
           />
         </Route>
       </Routes>
-     <ToastContainer position="top-center" />
+      <ToastContainer position="top-center" />
     </>
-    
   );
 }
 

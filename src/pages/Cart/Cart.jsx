@@ -3,7 +3,7 @@ import { useCart } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext";
 import styles from "./CartPage.module.css";
 import cn from "classnames";
-
+import { Link } from "react-router-dom";
 // Bootstrap icons (make sure you have bootstrap-icons installed)
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -128,6 +128,18 @@ export default function CartPage() {
             EGP
           </span>
         </h4>
+      </div>
+      <div className={cn("container mt-5", styles.cartPage)}>
+        {/* ...existing cart UI... */}
+        <div className="text-center mt-4">
+          <Link
+            to="/order-delivery"
+            className="btn btn-lg"
+            style={{ background: "var(--color-accent)", color: "#fff" }}
+          >
+            Proceed to Delivery
+          </Link>
+        </div>
       </div>
     </div>
   );
