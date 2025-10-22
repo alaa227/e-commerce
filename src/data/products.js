@@ -1,4 +1,7 @@
 // src/data/products.js
+
+const base = import.meta.env.BASE_URL;
+
 const products = [
   {
     id: 1,
@@ -7,7 +10,7 @@ const products = [
     currency: "EGP",
     type: "bracelet",
     stock: 10,
-    image: "../../../public/magnetic bracelet.jpeg",
+    image: `${base}magnetic bracelet.jpeg`,
   },
   {
     id: 2,
@@ -16,7 +19,7 @@ const products = [
     currency: "EGP",
     type: "bracelet",
     stock: 10,
-    image: "../../../public/colorful Tulip silver bracelet.webp",
+    image: `${base}colorful Tulip silver bracelet.webp`,
   },
   {
     id: 3,
@@ -25,7 +28,7 @@ const products = [
     currency: "EGP",
     type: "bracelet",
     stock: 10,
-    image: "../../../public/pink leather watch bracelet.jpg",
+    image: `${base}pink leather watch bracelet.jpg`,
   },
   {
     id: 4,
@@ -34,7 +37,7 @@ const products = [
     currency: "EGP",
     type: "bracelet",
     stock: 10,
-    image: "../../../public/wide gemstone bracelet.jpg",
+    image: `${base}wide gemstone bracelet.jpg`,
   },
   {
     id: 5,
@@ -43,7 +46,7 @@ const products = [
     currency: "EGP",
     type: "necklace",
     stock: 10,
-    image: "../../../public/butterfly heart gold necklace.webp",
+    image: `${base}butterfly heart gold necklace.webp`,
   },
   {
     id: 6,
@@ -52,7 +55,7 @@ const products = [
     currency: "EGP",
     type: "necklace",
     stock: 10,
-    image: "../../../public/white flower necklace.jpg",
+    image: `${base}white flower necklace.jpg`,
   },
   {
     id: 7,
@@ -61,7 +64,7 @@ const products = [
     currency: "EGP",
     type: "necklace",
     stock: 10,
-    image: "../../../public/gold spacestar necklacejpg.jpg",
+    image: `${base}gold spacestar necklacejpg.jpg`,
   },
   {
     id: 8,
@@ -70,7 +73,7 @@ const products = [
     currency: "EGP",
     type: "ring",
     stock: 10,
-    image: "../../../public/white rasin chains ring.webp",
+    image: `${base}white rasin chains ring.webp`,
   },
   {
     id: 9,
@@ -79,7 +82,7 @@ const products = [
     currency: "EGP",
     type: "ring",
     stock: 10,
-    image: "../../../public/flexible gold ring.webp",
+    image: `${base}flexible gold ring.webp`,
   },
   {
     id: 10,
@@ -88,7 +91,7 @@ const products = [
     currency: "EGP",
     type: "ring",
     stock: 10,
-    image: "../../../public/feather free size gold ring.jpg.webp",
+    image: `${base}feather free size gold ring.jpg.webp`,
   },
 ];
 
