@@ -18,7 +18,7 @@ import OrderDelivery from "./pages/OrderDelivery/OrderDelivery";
 function App() {
   return (
     <>
-      <HashRouter>
+      
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -36,7 +36,7 @@ function App() {
           />
         </Route>
       </Routes>
-       </HashRouter>
+      
       <ToastContainer position="top-center" />
     </>
   );
