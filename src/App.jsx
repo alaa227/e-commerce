@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Button from './components/Button/Button';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
@@ -18,6 +18,7 @@ import OrderDelivery from "./pages/OrderDelivery/OrderDelivery";
 function App() {
   return (
     <>
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -35,6 +36,7 @@ function App() {
           />
         </Route>
       </Routes>
+       </HashRouter>
       <ToastContainer position="top-center" />
     </>
   );
